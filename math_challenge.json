@@ -1,6 +1,6 @@
 {
-  "id": "commit_v1",
+  "id": "commit_v2",
   "status": "history",
   "complexity_level": "medium",
-  "security_calibration_formula": "(37 - 49) + 6"
+  "security_calibration_formula": "(69 - 26) * 8"
 }
