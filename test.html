@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equilibrium - Intern Challenge</title>
+    <meta name="description" content="Discover Equilibrium, carbon project originator centred around nature-based solutions, carbon financing, dMRV, GIS data and more. ">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Equilibrium Earth - Intern Challenge">
+    <meta property="og:description" content="Discover Equilibrium, carbon project originator centred around nature-based solutions, carbon financing, dMRV, GIS data and more. ">
+    <meta property="og:image" content="https://cdn.mrv.equilibriumearth.com/website/09eff5c1-6785-462b-8e2b-34b0b108a383.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://equilibriumearth.com">
+    <meta property="twitter:title" content="Equilibrium Earth - Intern Challenge">
+    <meta property="twitter:description" content="Discover Equilibrium, carbon project originator centred around nature-based solutions, carbon financing, dMRV, GIS data and more. ">
+    <meta property="twitter:image" content="https://cdn.mrv.equilibriumearth.com/website/09eff5c1-6785-462b-8e2b-34b0b108a383.png">
+    <link rel="icon" type="image/x-icon" href="https://equilibriumearth.com/favicon.ico"/>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', monospace;
+        }
+        .terminal-window {
+            width: 600px;
+            height: 400px;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+            border: 1px solid #444;
+        }
+        .menu {
+            background-color: #3d3d3d;
+            padding: 10px;
+            display: flex;
+            gap: 8px;
+            border-bottom: 1px solid #444;
+        }
+        .button { width: 12px; height: 12px; border-radius: 50%; }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
+        .screen {
+            padding: 20px;
+            color: #00ff00;
+            font-size: 14px;
+        }
+        p { margin: 5px 0; }
+        .line-2, .line-3 { color: #ff5f56; }
+        .blink { animation: blinker 1s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+
+    <div id="secure-terminal" data-encryption-key="APPLY">
+        <div class="terminal-window">
+            <div class="menu">
+                <div class="button red"></div>
+                <div class="button yellow"></div>
+                <div class="button green"></div>
+            </div>
+            <div class="screen">
+                <p class="line-1">root@intern-server:~$ ./access_application.sh</p>
+                <p class="line-2">> ACCESS DENIED.</p>
+                <p class="line-4">> Check the logs for more information.</p>
+                <p class="line-5 blink">_</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        console.clear();
+        const serverResponse = {
+            status: "403_FORBIDDEN",
+            message: "To unlock the application, you must decrypt the payload below.",
+            hint_1: "The payload is encoded in Base64.",
+            hint_2: "Once decoded from Base64, you will need to find the key hidden in this page to decipher the text.",
+            algo_hint: "The French call this 'Le Chiffre Indéchiffrable' (The Indecipherable Cipher).",
+            payload: "Q1BHTU1O" 
+        };
+
+        console.log("%c [SECURE CONNECTION] Handshake Successful", "color: #00ff00; font-weight: bold; font-size: 14px;");
+        console.log("Incoming transmission...");
+        console.log(serverResponse);
+        console.log("Figure out the token and enter it in the form.");
+        console.log("%c Good luck, Detective.", "color: gray; font-style: italic;");
+    </script>
+
+</body>
+</html>
